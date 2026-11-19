@@ -1,0 +1,28 @@
+variant,n,mean_%,median_%,t,hit_%,worst_%,best_%,ann_ret_%,sharpe,max_dd_%
+"A. Short ETF / long SPX, T-10 > IPO close",41,0.210,0.482,0.646,58.537,-6.436,4.223,0.055,0.152,-0.912
+"A. Short ETF / long SPX, T-20 > T-1",41,0.279,0.381,0.663,60.976,-8.265,6.623,0.073,0.149,-1.410
+"A. Short peers / long SPX, T-10 > IPO close",41,0.206,0.008,0.286,51.220,-12.576,11.818,0.054,0.081,-2.213
+"A. Short peers / long SPX, T-20 > T-1",41,-0.815,-0.462,-0.787,46.341,-22.771,9.186,-0.213,-0.222,-5.112
+"B. Buy IPO at IPO price / short ETF, exit T+20",36,25.081,14.111,4.022,75.000,-32.364,144.468,5.758,0.700,-7.594
+"B. Buy IPO at IPO price / short ETF, exit T+5",36,27.688,24.525,4.823,86.111,-34.203,113.751,6.380,0.854,-5.788
+"B. Buy IPO at IPO price / short ETF, exit first-day close",36,23.698,13.552,3.901,80.556,-51.938,112.951,5.468,0.837,-5.194
+"B. Buy IPO at IPO price / short peers, exit T+20",36,25.769,18.240,4.220,75.000,-24.238,145.967,5.915,0.729,-7.303
+"B. Buy IPO at IPO price / short peers, exit T+5",36,27.730,22.875,4.899,88.889,-39.456,113.452,6.390,0.860,-5.601
+"B. Buy IPO at IPO price / short peers, exit first-day close",36,23.906,15.218,3.943,80.556,-50.601,113.154,5.516,0.843,-5.060
+"B. Buy IPO at first-day open / short ETF, exit T+20",40,0.743,0.142,0.216,50.000,-43.334,62.243,0.190,0.041,-15.464
+"B. Buy IPO at first-day open / short ETF, exit T+5",40,3.109,-0.041,1.189,50.000,-30.778,37.834,0.796,0.228,-7.801
+"B. Buy IPO at first-day open / short ETF, exit first-day close",40,-1.415,-0.719,-1.122,47.500,-22.812,17.225,-0.363,-0.283,-8.290
+"B. Buy IPO at first-day open / short peers, exit T+20",40,1.880,-0.543,0.589,50.000,-50.536,58.637,0.479,0.105,-11.642
+"B. Buy IPO at first-day open / short peers, exit T+5",40,3.397,0.754,1.419,55.000,-32.278,33.812,0.870,0.254,-7.037
+"B. Buy IPO at first-day open / short peers, exit first-day close",40,-1.066,-0.384,-0.831,45.000,-25.174,16.740,-0.273,-0.211,-7.168
+"B0. Buy IPO at IPO price, unhedged, exit T+20",36,27.492,22.558,4.411,80.556,-37.763,142.550,6.311,0.762,-7.443
+"B0. Buy IPO at IPO price, unhedged, exit T+5",36,28.020,24.457,4.883,86.111,-34.100,116.150,6.457,0.863,-5.586
+"B0. Buy IPO at IPO price, unhedged, exit first-day close",36,24.017,13.668,3.969,77.778,-51.700,112.709,5.541,0.847,-5.170
+"B0. Buy IPO at first-day open, unhedged, exit T+20",40,3.257,1.615,0.962,55.000,-38.957,60.775,0.831,0.177,-13.124
+"B0. Buy IPO at first-day open, unhedged, exit T+5",40,3.339,-0.359,1.239,47.500,-30.982,40.848,0.855,0.246,-7.247
+"B0. Buy IPO at first-day open, unhedged, exit first-day close",40,-1.264,-0.932,-1.041,42.500,-22.541,17.043,-0.324,-0.263,-7.677
+"C. Buy IPO at first-day close / short ETF, exit T+20",40,1.782,-0.340,0.582,47.500,-34.437,60.518,0.455,0.099,-11.060
+"C. Buy IPO at first-day close / short ETF, exit T+60",40,1.270,-1.891,0.265,47.500,-40.655,103.210,0.321,0.048,-23.802
+"C. Buy IPO at first-day close / short peers, exit T+20",40,2.609,0.769,0.896,52.500,-41.628,56.838,0.666,0.150,-10.456
+"C. Buy IPO at first-day close / short peers, exit T+60",40,2.342,-0.107,0.517,50.000,-33.354,103.811,0.592,0.094,-17.150
+"D. Rebound: long ETF / short SPX, T+3 > T+20",41,0.500,0.676,1.114,65.854,-5.252,7.312,0.131,0.260,-1.312

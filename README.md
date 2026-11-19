@@ -36,6 +36,30 @@ underperform the market in the days before the deal. The trade:
 - Portfolio level, even the best variant earns ~0.1% a year on NAV at 10% per event, because
   it is invested only ~9% of days.
 
+## Mega-IPOs only (≥ $2bn): variants
+
+`python analyze_mega.py` compares 27 variants on the 41 deals of $2bn or more
+(`results/mega_2bn_variants.csv`, chart `results/mega_2bn_pnl.png`). Net of costs, per trade:
+
+| Variant | n | Mean | Median | t-stat | Hit rate | Worst |
+|---|---|---|---|---|---|---|
+| Pre-IPO: short sector ETF / long SPX, T-10 → IPO close | 41 | +0.2% | +0.5% | 0.7 | 59% | −6% |
+| Buy at IPO price / short sector ETF, exit first-day close | 36 | +23.7% | +13.6% | 3.9 | 81% | −52% |
+| Buy at IPO price / short sector ETF, exit T+5 | 36 | +27.7% | +24.5% | 4.8 | 86% | −34% |
+| Buy at IPO price, no hedge, exit T+5 | 36 | +28.0% | +24.5% | 4.9 | 86% | −34% |
+| Buy at first-day open / short sector ETF, exit T+5 | 40 | +3.1% | 0.0% | 1.2 | 50% | −31% |
+| Buy at first-day close / short sector ETF, exit T+20 | 40 | +1.8% | −0.3% | 0.6 | 48% | −34% |
+| Rebound: long sector ETF / short SPX, T+3 → T+20 | 41 | +0.5% | +0.7% | 1.1 | 66% | −5% |
+
+- The whole edge is the **IPO discount**: it exists only if you receive shares at the offer
+  price. Buying in the market on day one (open or close) has no significant edge.
+- The **sector short adds nothing** to the IPO-price trade (hedged and unhedged are the same).
+- Allocation is the catch. The average is driven by hot deals (Snowflake, Airbnb, DoorDash),
+  where allocations are smallest; the backtest assumes an equal fill in every deal.
+  2020-21 alone produced about two thirds of the cumulative P&L.
+- Direct listings are excluded from the IPO-price variants (no offer price). The −52% worst case
+  is Pershing Square Inc. (2026), whose offer terms were not verified and may be a data artefact.
+
 ## How to use this
 
 1. **Do not trade the base case.** Shorting single-stock peers before every $1bn+ IPO lost money.
@@ -68,6 +92,7 @@ python run_backtest.py                              # base case
 python run_backtest.py --mode etf --min-deal 2e9    # mega-IPO / sector ETF variant
 python run_backtest.py --sweep                      # full robustness grid (~7 min)
 python plot_results.py etf_T-10_t0_close            # charts
+python analyze_mega.py                              # mega-IPO variants + P&L chart
 pytest
 ```
 
