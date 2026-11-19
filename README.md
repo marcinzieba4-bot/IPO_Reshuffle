@@ -24,7 +24,8 @@ underperform the market in the days before the deal. The trade:
 - Across all 72 tested combinations (peer type × entry day × deal size × exit), **none reaches
   statistical significance** (best net t-stat is 1.2). Full grid: `results/sweep.csv`.
 - The only consistent pocket is **mega-IPOs (≥ $2bn) shorted via the sector ETF**: positive net
-  in all 12 of its variants, +22 to +37 bps per trade for entries at T-10 or earlier. With 41
+  in 10 of its 12 variants, +22 to +37 bps per trade for entries at T-10 or earlier (about zero
+  when entering as late as T-5). With 41
   events and 72 configurations tried, that is a lead to follow, not a result to trade.
 - Around those mega-IPOs the sector ETF drifts about −100 bps versus SPX from T-30 to T-1
   (roughly 2 standard errors) and recovers most of it by T+20
